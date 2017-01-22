@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="secondary">
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
@@ -10,6 +10,8 @@
     Tap the button to share your contact information!
   </p>
   <ion-fab center bottom>
-    <button ion-fab color="primary"><ion-icon name="people"></ion-icon></button>
+    <button ion-fab color="primary" (click)="presentLoading()">
+      <ion-icon name="link"></ion-icon>
+    </button>
   </ion-fab>
 </ion-content>
